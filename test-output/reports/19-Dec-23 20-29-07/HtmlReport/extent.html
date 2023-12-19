@@ -1,0 +1,2402 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">tutorialsninja Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 19, 2023 08:29:07 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 19, 2023 08:29:07 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 19, 2023 08:34:15 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>2</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='37%'><b>6</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='62%'><b>10</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='52%'><b>84</b> steps passed</small></div>
+<div>
+<small data-tooltip='6%'><b>10</b> steps failed,
+<b>65</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Desktops Page functionality test":98.071,"Laptopsandnotebooks functionality":32.157,"Accounts functionality":149.409,"Navigate to Top menu pages successfully":26.271
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@sanity</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>@author_BP</td>
+<td>6</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>37.5%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>6</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>37.5%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Bhumika Patel</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>tutorialsninja</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 6,
+failChild: 10,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 84,
+failGrandChild: 10,
+warningGrandChild: 0,
+skipGrandChild: 65,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@author_BP</a><a class="dropdown-item" href="#">@regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Desktops Page functionality test</p>
+            <p class="text-sm">
+              <span>20:29:09</span> / <span>00:01:38:071</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Desktops Page functionality test</h5>
+<span class='badge badge-success'>12.19.2023 20:29:09</span>
+<span class='badge badge-danger'>12.19.2023 20:30:47</span>
+<span class='badge badge-default'>00:01:38:071</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>VerifyProductArrangeInAlphaBeticalOrder</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuSteps.mouseHoverOnDesktopsTabAndClick()">
+                <span>When Mouse hover on “Desktops” Tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuSteps.callSelectMenuMethodAndPassTheMenu(java.lang.String)">
+                <span>And call selectMenu method and pass the menu "Show AllDesktops"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.DesktopsSteps.selectSortByPosition(java.lang.String)">
+                <span>And Select Sort By position "Name (Z - A)"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.DesktopsSteps.verifyTheProductWillArrangeInDescendingOrder()">
+                <span>Then Verify the Product will arrange in Descending order.</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>VerifyProductAddedToShoppingCartSuccessFully</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>VerifyProductAddedToShoppingCartSuccessFully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When Mouse hover on Currency Dropdown and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on £Pound Sterling and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on “Desktops” Tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And call selectMenu method and pass the menu "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Select Sort By position "Name (A - Z)"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And Select product "HTC Touch HD"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c451f088aeeacb8a373356f9ed9952fb, getElementText {id=C8CE80A7AC53F9E2AF0365A7B04FB465_element_97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50495/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c451f088aeeacb8a373356f9ed9952fb)] -> xpath: //h4/a]
+Session ID: c451f088aeeacb8a373356f9ed9952fb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at com.tutorialsninja.demo.pages.DesktopsPage.selectProduct(DesktopsPage.java:63)
+	at com.tutorialsninja.demo.steps.DesktopsSteps.selectProduct(DesktopsSteps.java:35)
+	at ✽.Select product "HTC Touch HD"(file:///C:/IdeaProject/tutorialsninja-sw-cucumber-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "HTC Touch HD"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter Qty "1" using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Message 'Success: You have added "HTC Touch HD" to your shopping cart!'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on link “shopping cart” display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "Shopping Cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify the Product name "HTC Touch HD"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Model "Product 1"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Total "£ 74.73"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>VerifyProductAddedToShoppingCartSuccessFully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When Mouse hover on Currency Dropdown and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on £Pound Sterling and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on “Desktops” Tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And call selectMenu method and pass the menu "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Select Sort By position "Name (A - Z)"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And Select product "iPhone"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [724223007250106d97ac73698e398010, getElementText {id=1641F3C9F16711AFC8A14953FEF385C1_element_98}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50529/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (724223007250106d97ac73698e398010)] -> xpath: //h4/a]
+Session ID: 724223007250106d97ac73698e398010
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at com.tutorialsninja.demo.pages.DesktopsPage.selectProduct(DesktopsPage.java:63)
+	at com.tutorialsninja.demo.steps.DesktopsSteps.selectProduct(DesktopsSteps.java:35)
+	at ✽.Select product "iPhone"(file:///C:/IdeaProject/tutorialsninja-sw-cucumber-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "iPhone"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter Qty "1" using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Message 'Success: You have added "iPhone" to your shopping cart!'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on link “shopping cart” display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "Shopping Cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify the Product name "iPhone"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Model "product 11"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Total "£ 75.46"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="46"><span class="badge log fail-bg mr-2">Fail</span>VerifyProductAddedToShoppingCartSuccessFully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When Mouse hover on Currency Dropdown and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on £Pound Sterling and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on “Desktops” Tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And call selectMenu method and pass the menu "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Select Sort By position "Name (A - Z)"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And Select product "iPod Classic"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fade795e0242f3da02322b81e8a1635e, getElementText {id=4EC5EDD81D624F6DD9AC1E70D5109284_element_101}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50560/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fade795e0242f3da02322b81e8a1635e)] -> xpath: //h4/a]
+Session ID: fade795e0242f3da02322b81e8a1635e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at com.tutorialsninja.demo.pages.DesktopsPage.selectProduct(DesktopsPage.java:63)
+	at com.tutorialsninja.demo.steps.DesktopsSteps.selectProduct(DesktopsSteps.java:35)
+	at ✽.Select product "iPod Classic"(file:///C:/IdeaProject/tutorialsninja-sw-cucumber-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "iPod Classic"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter Qty "1" using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Message 'Success: You have added "iPod Classic" to your shopping cart!'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on link “shopping cart” display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "Shopping Cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify the Product name "iPod Classic"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Model "product 20"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Total "£ 74.73"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="64"><span class="badge log fail-bg mr-2">Fail</span>VerifyProductAddedToShoppingCartSuccessFully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When Mouse hover on Currency Dropdown and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on £Pound Sterling and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on “Desktops” Tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And call selectMenu method and pass the menu "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Select Sort By position "Name (A - Z)"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And Select product "MacBook"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c30842548270deff48405e4a9ed27632, getElementText {id=07CE9B73425C9B4FBB91DA705134D146_element_102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50591}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50591/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c30842548270deff48405e4a9ed27632)] -> xpath: //h4/a]
+Session ID: c30842548270deff48405e4a9ed27632
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at com.tutorialsninja.demo.pages.DesktopsPage.selectProduct(DesktopsPage.java:63)
+	at com.tutorialsninja.demo.steps.DesktopsSteps.selectProduct(DesktopsSteps.java:35)
+	at ✽.Select product "MacBook"(file:///C:/IdeaProject/tutorialsninja-sw-cucumber-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "MacBook"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter Qty "1" using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Message 'Success: You have added "MacBook" to your shopping cart!'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on link “shopping cart” display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "Shopping Cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify the Product name "MacBook"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Model "Product 16"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Total "£ 368.73"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="82"><span class="badge log fail-bg mr-2">Fail</span>VerifyProductAddedToShoppingCartSuccessFully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When Mouse hover on Currency Dropdown and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on £Pound Sterling and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on “Desktops” Tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And call selectMenu method and pass the menu "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Select Sort By position "Name (A - Z)"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And Select product "MacBook Air"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41c96023bf0405e2a4ab6b6338b3dc99, getElementText {id=51083510E5E5139D55D9E8B1B126F44A_element_103}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50624/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (41c96023bf0405e2a4ab6b6338b3dc99)] -> xpath: //h4/a]
+Session ID: 41c96023bf0405e2a4ab6b6338b3dc99
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at com.tutorialsninja.demo.pages.DesktopsPage.selectProduct(DesktopsPage.java:63)
+	at com.tutorialsninja.demo.steps.DesktopsSteps.selectProduct(DesktopsSteps.java:35)
+	at ✽.Select product "MacBook Air"(file:///C:/IdeaProject/tutorialsninja-sw-cucumber-6/src/test/resources/features/desktopstest.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "MacBook Air"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter Qty "1" using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Message 'Success: You have added "MacBook Air" to your shopping cart!'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on link “shopping cart” display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "Shopping Cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify the Product name "MacBook Air"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Model "Product 17"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Total "£ 736.23"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="100"><span class="badge log fail-bg mr-2">Fail</span>VerifyProductAddedToShoppingCartSuccessFully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When Mouse hover on Currency Dropdown and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on £Pound Sterling and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Mouse hover on “Desktops” Tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And call selectMenu method and pass the menu "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Select Sort By position "Name (A - Z)"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Select product "Sony VAIO"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then Verify the Text "Sony VAIO"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Error expected [x] but found [Sony VAIO]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.tutorialsninja.demo.steps.DesktopsSteps.verifyTheText(DesktopsSteps.java:40)
+	at ✽.Verify the Text "Sony VAIO"(file:///C:/IdeaProject/tutorialsninja-sw-cucumber-6/src/test/resources/features/desktopstest.feature:17)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter Qty "1" using select class</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on “Add to Cart” button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Message 'Success: You have added "Sony VAIO" to your shopping cart!'</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on link “shopping cart” display into success message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Text "Shopping Cart"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify the Product name "Sony VAIO"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Model "Product 19"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify the Total "£ 736.23"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="118"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Laptopsandnotebooks functionality</p>
+            <p class="text-sm">
+              <span>20:30:47</span> / <span>00:00:32:157</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Laptopsandnotebooks functionality</h5>
+<span class='badge badge-success'>12.19.2023 20:30:47</span>
+<span class='badge badge-danger'>12.19.2023 20:31:19</span>
+<span class='badge badge-default'>00:00:32:157</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=118</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="119"><span class="badge log pass-bg mr-2">Pass</span>VerifyProductsPriceDisplayHighToLowSuccessfully</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuSteps.userIsOnHomePage()">
+                <span>Given User is on Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuSteps.mouseHoverOnLaptopsNotebooksTabAndClick()">
+                <span>When Mouse hover on “Laptops & Notebooks” Tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuSteps.callSelectMenuMethodAndPassTheMenu(java.lang.String)">
+                <span>And call selectMenu method and pass the menu "Show AllLaptops & Notebooks"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.DesktopsSteps.selectSortByPosition(java.lang.String)">
+                <span>And Select Sort By position "Price (High > Low)"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.verifyTheProductPriceWillArrangeInHighToLowOrder()">
+                <span>Then Verify the Product price will arrange in High to Low order</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="127"><span class="badge log pass-bg mr-2">Pass</span>VerifyThatUserPlaceOrderSuccessfully</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuSteps.userIsOnHomePage()">
+                <span>Given User is on Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuSteps.mouseHoverOnLaptopsNotebooksTabAndClick()">
+                <span>When Mouse hover on “Laptops & Notebooks” Tab and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.TopMenuSteps.callSelectMenuMethodAndPassTheMenu(java.lang.String)">
+                <span>And call selectMenu method and pass the menu "Show AllLaptops & Notebooks"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.DesktopsSteps.selectSortByPosition(java.lang.String)">
+                <span>And Select Sort By position "Price (High > Low)"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.selectProductMacBook()">
+                <span>And Select Product “MacBook”</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.verifyTheTextMacBook()">
+                <span>Then Verify the text “MacBook”</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.clickOnAddToCartButton()">
+                <span>And Click on ‘Add To Cart’ button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.verifyTheMessageSuccessYouHaveAddedMacBookToYourShoppingCart()">
+                <span>Then Verify the message “Success: You have added MacBook to your shopping cart!”</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.DesktopsSteps.clickOnLinkShoppingCartDisplayIntoSuccessMessage()">
+                <span>And Click on link “shopping cart” display into success message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.changeQuantity(java.lang.String)">
+                <span>And Change Quantity "2"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.clickOnUpdateTab()">
+                <span>And Click on “Update” Tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.verifyTheMessageSuccessYouHaveModifiedYourShoppingCart()">
+                <span>Then Verify the message “Success: You have modified your shopping cart!”</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.verifyTheTotalAmount£(double)">
+                <span>Then Verify the Total amount £737.45</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.clickOnCheckoutButton()">
+                <span>And Click on “Checkout” button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.verifyTheTextCheckout()">
+                <span>And Verify the text “Checkout”</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.verifyTheTextNewCustomer()">
+                <span>And Verify the Text “New Customer”</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.clickOnGuestCheckoutRadioButton()">
+                <span>And Click on “Guest Checkout” radio button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.clickOnContinueTab()">
+                <span>And Click on “Continue” tab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.fillTheMandatoryFields()">
+                <span>And Fill the mandatory fields</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.clickOnContinueButton1()">
+                <span>And Click on “Continue” Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.addCommentsAboutYourOrderIntoTextArea()">
+                <span>And Add Comments About your order into text area</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.checkTheTermsConditionsCheckBox()">
+                <span>And Check the Terms & Conditions check box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.clickOnContinueButton()">
+                <span>And Click on “Continue” button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.LaptopsAndNotebooksSteps.verifyTheMessageWarningPaymentMethodRequired()">
+                <span>Then Verify the message “Warning: Payment method required!”</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="154"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Accounts functionality</p>
+            <p class="text-sm">
+              <span>20:31:19</span> / <span>00:02:29:409</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Accounts functionality</h5>
+<span class='badge badge-success'>12.19.2023 20:31:19</span>
+<span class='badge badge-danger'>12.19.2023 20:33:49</span>
+<span class='badge badge-default'>00:02:29:409</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=154</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="155"><span class="badge log fail-bg mr-2">Fail</span>VerifyUserShouldNavigateToRegisterPageSuccessfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.clickOnMyAccountLink()">
+                <span>When Click on My Account Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.callTheMethodSelectMyAccountOptionsMethodAndPassTheParameter(java.lang.String)">
+                <span>And Call the method selectMyAccountOptions method and pass the parameter "Register"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.verifyTheText(java.lang.String)">
+                <span>Then Verify the text "Register Account"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='Register Account']"}
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8813de771e6fc2ea349af4f21e5e436f, findElement {using=xpath, value=//h1[normalize-space()='Register Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50753}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50753/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8813de771e6fc2ea349af4f21e5e436f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.getTextFromElement(Utility.java:67)
+	at com.tutorialsninja.demo.pages.MyAccountsPage.getTextFromRegister(MyAccountsPage.java:98)
+	at com.tutorialsninja.demo.steps.MyAccountsSteps.verifyTheText(MyAccountsSteps.java:23)
+	at ✽.Verify the text "Register Account"(file:///C:/IdeaProject/tutorialsninja-sw-cucumber-6/src/test/resources/features/myaccountstest.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="161"><span class="badge log fail-bg mr-2">Fail</span>VerifyUserShouldNavigateToLoginPageSuccessfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.clickOnMyAccountLink()">
+                <span>When Click on My Account Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.callTheMethodSelectMyAccountOptionsMethodAndPassTheParameter(java.lang.String)">
+                <span>And Call the method selectMyAccountOptions method and pass the parameter "Login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.verifyTheText(java.lang.String)">
+                <span>Then Verify the text "Returning Customer"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='Register Account']"}
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1405cb8cd80961727294fbd85dac0377, findElement {using=xpath, value=//h1[normalize-space()='Register Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50807/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1405cb8cd80961727294fbd85dac0377
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.getTextFromElement(Utility.java:67)
+	at com.tutorialsninja.demo.pages.MyAccountsPage.getTextFromRegister(MyAccountsPage.java:98)
+	at com.tutorialsninja.demo.steps.MyAccountsSteps.verifyTheText(MyAccountsSteps.java:23)
+	at ✽.Verify the text "Returning Customer"(file:///C:/IdeaProject/tutorialsninja-sw-cucumber-6/src/test/resources/features/myaccountstest.feature:12)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="167"><span class="badge log fail-bg mr-2">Fail</span>VerifyThatUserRegisterAccountSuccessfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.clickOnMyAccountLink()">
+                <span>When Click on My Account Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.callTheMethodSelectMyAccountOptionsMethodAndPassTheParameter(java.lang.String)">
+                <span>And Call the method selectMyAccountOptions method and pass the parameter "Register"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.iEnterFirstNameAndIEnterLastNameAndIEnterEmailAndIEnterTelephoneAndIEnterPasswordAndIEnterPasswordConfirmAndISelectSubscribeYesRadioButtonAndIClickOnPrivacyPolicyCheckBoxAndIClickOnContinueButton()">
+                <span>And I enter First Name and I enter Last Name and I enter Email and I enter Telephone and I enter Password and I enter Password Confirm and I select Subscribe Yes radio button and I click on Privacy Policy check box and I click on Continue button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#input-firstname"}
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bf0aa6bf59086d3eceff0e88a39454a, findElement {using=css selector, value=#input-firstname}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50858/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bf0aa6bf59086d3eceff0e88a39454a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.sendKeys(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.sendTextToElement(Utility.java:78)
+	at com.tutorialsninja.demo.pages.MyAccountsPage.fillMandatoryDetails(MyAccountsPage.java:105)
+	at com.tutorialsninja.demo.steps.MyAccountsSteps.iEnterFirstNameAndIEnterLastNameAndIEnterEmailAndIEnterTelephoneAndIEnterPasswordAndIEnterPasswordConfirmAndISelectSubscribeYesRadioButtonAndIClickOnPrivacyPolicyCheckBoxAndIClickOnContinueButton(MyAccountsSteps.java:32)
+	at ✽.I enter First Name and I enter Last Name and I enter Email and I enter Telephone and I enter Password and I enter Password Confirm and I select Subscribe Yes radio button and I click on Privacy Policy check box and I click on Continue button(file:///C:/IdeaProject/tutorialsninja-sw-cucumber-6/src/test/resources/features/myaccountstest.feature:17)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.iCanSeeTheMessageYourAccountHasBeenCreated()">
+                <span>Then I can see the message 'Your Account Has Been Created!'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.clickOnContinueButton()">
+                <span>And Click on Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.clickOnMyAccountLink()">
+                <span>When Click on My Account Link</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.callTheMethodSelectMyAccountOptionsMethodAndPassTheParameter(java.lang.String)">
+                <span>And Call the method selectMyAccountOptions method and pass the parameter "Logout"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.verifyTheTextAccountLogout()">
+                <span>And Verify the text “Account Logout”</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.clickOnContinueButton()">
+                <span>Then Click on Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="179"><span class="badge log fail-bg mr-2">Fail</span>VerifyThatUserShouldLoginAndLogoutSuccessfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.clickOnMyAccountLink()">
+                <span>When Click on My Account Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.callTheMethodSelectMyAccountOptionsMethodAndPassTheParameter(java.lang.String)">
+                <span>And Call the method selectMyAccountOptions method and pass the parameter "Login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.iEnterEmailAddressAndLastNameAndPassword()">
+                <span>And I enter Email address and Last Name and Password</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#input-email"}
+  (Session info: chrome=120.0.6099.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [66f140c10601638ab61de87a77f653dc, findElement {using=css selector, value=#input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\patel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50898/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 66f140c10601638ab61de87a77f653dc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.sendKeys(Unknown Source)
+	at com.tutorialsninja.demo.utility.Utility.sendTextToElement(Utility.java:78)
+	at com.tutorialsninja.demo.pages.MyAccountsPage.fillInEmailPassword(MyAccountsPage.java:118)
+	at com.tutorialsninja.demo.steps.MyAccountsSteps.iEnterEmailAddressAndLastNameAndPassword(MyAccountsSteps.java:52)
+	at ✽.I enter Email address and Last Name and Password(file:///C:/IdeaProject/tutorialsninja-sw-cucumber-6/src/test/resources/features/myaccountstest.feature:28)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.clickOnLoginButton()">
+                <span>Then Click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.verifyText(java.lang.String)">
+                <span>And Verify text "My Account"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.clickOnMyAccountLink()">
+                <span>And Click on My Account Link</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.callTheMethodSelectMyAccountOptionsMethodAndPassTheParameter(java.lang.String)">
+                <span>And Call the method selectMyAccountOptions method and pass the parameter "Logout"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.verifyTheTextAccountLogout()">
+                <span>And Verify the text “Account Logout”</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.tutorialsninja.demo.steps.MyAccountsSteps.clickOnContinueButton()">
+                <span>Then Click on Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="191"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Navigate to Top menu pages successfully</p>
+            <p class="text-sm">
+              <span>20:33:49</span> / <span>00:00:26:271</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Navigate to Top menu pages successfully</h5>
+<span class='badge badge-success'>12.19.2023 20:33:49</span>
+<span class='badge badge-danger'>12.19.2023 20:34:15</span>
+<span class='badge badge-default'>00:00:26:271</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=191</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="192"><span class="badge log pass-bg mr-2">Pass</span>VerifyUserShouldNavigateToDesktopsPageSuccessfully</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="193"><span class="badge log pass-bg mr-2">Pass</span>VerifyUserShouldNavigateToDesktopsPageSuccessfully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on Home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Mouse hover on “Desktops” Tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And call selectMenu method and pass the menu "Show AllDesktops"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify the text ‘Desktops’</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="200"><span class="badge log pass-bg mr-2">Pass</span>VerifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="201"><span class="badge log pass-bg mr-2">Pass</span>VerifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on Home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Mouse hover on “Laptops & Notebooks” Tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And call selectMenu method and pass the menu "Show AllLaptops & Notebooks"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify the text ‘Laptops & Notebooks’</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="208"><span class="badge log pass-bg mr-2">Pass</span>VerifyUserShouldNavigateToComponentsPageSuccessfully</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="209"><span class="badge log pass-bg mr-2">Pass</span>VerifyUserShouldNavigateToComponentsPageSuccessfully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on Home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Mouse hover on “Components” Tab and click</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And call selectMenu method and pass the menu "Show AllComponents"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify the text ‘Components</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:31:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='155'>VerifyUserShouldNavigateToRegisterPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyUserShouldNavigateToRegisterPageSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='193'>VerifyUserShouldNavigateToDesktopsPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Navigate to Top menu pages successfully.VerifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:29:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>VerifyProductArrangeInAlphaBeticalOrder</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductArrangeInAlphaBeticalOrder</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:30:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='118' id='119'>VerifyProductsPriceDisplayHighToLowSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Laptopsandnotebooks functionality.VerifyProductsPriceDisplayHighToLowSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:32:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='161'>VerifyUserShouldNavigateToLoginPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyUserShouldNavigateToLoginPageSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='201'>VerifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Navigate to Top menu pages successfully.VerifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+<span class='badge log badge-danger'>10</span>
+</span>
+<p class="name">@author_BP</p>
+<p class="duration text-sm">16 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@author_BP</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+<span status="fail" class='badge log badge-danger'>10 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:29:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>VerifyProductArrangeInAlphaBeticalOrder</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductArrangeInAlphaBeticalOrder</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:29:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:29:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:29:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='46'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:30:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:30:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='82'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:30:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:30:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='118' id='119'>VerifyProductsPriceDisplayHighToLowSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Laptopsandnotebooks functionality.VerifyProductsPriceDisplayHighToLowSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:30:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='118' id='127'>VerifyThatUserPlaceOrderSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Laptopsandnotebooks functionality.VerifyThatUserPlaceOrderSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:31:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='155'>VerifyUserShouldNavigateToRegisterPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyUserShouldNavigateToRegisterPageSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:32:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='161'>VerifyUserShouldNavigateToLoginPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyUserShouldNavigateToLoginPageSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:32:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='167'>VerifyThatUserRegisterAccountSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyThatUserRegisterAccountSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:33:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='179'>VerifyThatUserShouldLoginAndLogoutSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyThatUserShouldLoginAndLogoutSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='193'>VerifyUserShouldNavigateToDesktopsPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Navigate to Top menu pages successfully.VerifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='201'>VerifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Navigate to Top menu pages successfully.VerifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:34:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='209'>VerifyUserShouldNavigateToComponentsPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Navigate to Top menu pages successfully.VerifyUserShouldNavigateToComponentsPageSuccessfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+<span class='badge log badge-danger'>10</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">16 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+<span status="fail" class='badge log badge-danger'>10 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:29:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>VerifyProductArrangeInAlphaBeticalOrder</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductArrangeInAlphaBeticalOrder</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:29:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:29:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:29:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='46'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:30:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:30:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='82'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:30:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>VerifyProductAddedToShoppingCartSuccessFully</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:30:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='118' id='119'>VerifyProductsPriceDisplayHighToLowSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Laptopsandnotebooks functionality.VerifyProductsPriceDisplayHighToLowSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:30:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='118' id='127'>VerifyThatUserPlaceOrderSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Laptopsandnotebooks functionality.VerifyThatUserPlaceOrderSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:31:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='155'>VerifyUserShouldNavigateToRegisterPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyUserShouldNavigateToRegisterPageSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:32:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='161'>VerifyUserShouldNavigateToLoginPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyUserShouldNavigateToLoginPageSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:32:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='167'>VerifyThatUserRegisterAccountSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyThatUserRegisterAccountSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:33:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='179'>VerifyThatUserShouldLoginAndLogoutSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyThatUserShouldLoginAndLogoutSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='193'>VerifyUserShouldNavigateToDesktopsPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Navigate to Top menu pages successfully.VerifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='201'>VerifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Navigate to Top menu pages successfully.VerifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:34:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='191' id='209'>VerifyUserShouldNavigateToComponentsPageSuccessfully</a>
+<div class="">
+<span class="badge badge-default">Navigate to Top menu pages successfully.VerifyUserShouldNavigateToComponentsPageSuccessfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.StaleElementReferenceException</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:29:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>And Select product "HTC Touch HD"</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully.And Select product "HTC Touch HD"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:29:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='35'>And Select product "iPhone"</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully.And Select product "iPhone"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:30:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>And Select product "iPod Classic"</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully.And Select product "iPod Classic"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:30:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='71'>And Select product "MacBook"</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully.And Select product "MacBook"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:30:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='89'>And Select product "MacBook Air"</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully.And Select product "MacBook Air"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:31:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='159'>Then Verify the text "Register Account"</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyUserShouldNavigateToRegisterPageSuccessfully.Then Verify the text "Register Account"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:32:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='165'>Then Verify the text "Returning Customer"</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyUserShouldNavigateToLoginPageSuccessfully.Then Verify the text "Returning Customer"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:33:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='171'>And I enter First Name and I enter Last Name and I enter Email and I enter Telephone and I enter Password and I enter Password Confirm and I select Subscribe Yes radio button and I click on Privacy Policy check box and I click on Continue button</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyThatUserRegisterAccountSuccessfully.And I enter First Name and I enter Last Name and I enter Email and I enter Telephone and I enter Password and I enter Password Confirm and I select Subscribe Yes radio button and I click on Privacy Policy check box and I click on Continue button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:33:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='154' id='183'>And I enter Email address and Last Name and Password</a>
+<div class="">
+<span class="badge badge-default">Accounts functionality.VerifyThatUserShouldLoginAndLogoutSuccessfully.And I enter Email address and Last Name and Password</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:30:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='108'>Then Verify the Text "Sony VAIO"</a>
+<div class="">
+<span class="badge badge-default">Desktops Page functionality test.VerifyProductAddedToShoppingCartSuccessFully.Then Verify the Text "Sony VAIO"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
